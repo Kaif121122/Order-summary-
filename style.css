@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+    background-image: url("images\pattern-background-desktop.svg");
+}
+#container {
+    background-color: var(--Very-pale-blue);
+    margin: 5rem 7rem 1rem;
+    /* border: 2px solid ; */
+    border-radius: 15px;
+    text-align: center;
+}
+.main-img {
+   /* border: 2px solid;
+    */
+}
+.main-img img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px 10px 0px 0px;
+   
+}
+.box1 {
+   padding: 2rem;
+   
+   
+}
+.box1 h1 {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--Dark-blue);
+   
+}
+.box1 p {
+    padding-top: 1rem;
+    line-height: 2rem;
+    font-weight: 500;
+   color: var(--Desaturated-blue);
+    
+}
+.box2 {
+   display: flex;
+   background-color: hsl(227, 100%, 89%);
+   border-radius: 10px;
+   padding: 1.5rem;
+   margin: 1.5rem;
+   font-size: 1.2rem;
+   justify-content: space-between;
+}
+.box2 img {
+   
+    border-radius: 50%;
+}
+.box2 .price h3 {
+    color: var(--Dark-blue);
+}
+.box2 .price p {
+   color: var(--Desaturated-blue);
+}
+.price {
+   display: flex;
+   flex-direction: column;
+   margin-right: 5rem;
+   line-height: 20px;
+   
+}
+.link {
+    
+    display: flex;
+    align-items: center;
+   
+}
+.link a {
+    color: var(--Bright-blue);
+    font-weight: 700;
+    
+}
+.order {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    
+    
+}
+.order button {
+   padding: 1rem 3rem;
+   border-radius: 10px;
+   background-color: var(--Bright-blue);
+   color: var(--Very-pale-blue);
+   font-weight: 700;
+}
+.order button:hover {
+    cursor: pointer;
+}
+.cancel {
+    padding: 2rem;
+}
+.cancel a {
+    
+   color: var(--Desaturated-blue);
+   font-weight: 700;
+   text-decoration: none;
+   
+}
+@media  screen and (min-width:450px) {
+    #container {
+        width: 375px;
+        margin: 4rem auto 0rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .box2 {
+        flex-direction: column;
+        justify-content: center;
+        /* margin: 0 auto; */
+    }
+    .box2 img {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .box2 .price {
+        margin: 0 auto;
+    }
+    .box2 .link {
+        margin: 0 auto;
+    }
+}
